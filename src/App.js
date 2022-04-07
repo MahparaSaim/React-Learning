@@ -6,27 +6,27 @@ function App() {
   const expense = [
     {
       id: "e1",
-      title: "Car Insurance1",
+      title: "Car Insurance 1",
       amount: 295.96,
       date: Date(2022, 4, 5),
     },
     {
       id: "e2",
-      title: "Car Insurance2",
+      title: "Car Insurance 2",
       amount: 295.96,
       date: Date(2022, 4, 5),
     },
     {
       id: "e3",
-      title: "Car Insurance3",
+      title: "Car Insurance 3",
       amount: 295.96,
-      date: Date(2022, 4, 5),
+      date: Date(2022, 2, 5),
     },
     {
       id: "e4",
-      title: "Car Insurance4",
+      title: "Car Insurance 4",
       amount: 295.96,
-      date: Date(2022, 4, 5),
+      date: Date(2022, 3, 5),
     },
   ];
   return (
@@ -43,14 +43,14 @@ function App() {
         date={expense[1].date}
       ></ExpenseItem>
       <ExpenseItem
+        title={expense[2].title}
+        amount={expense[2].amount}
+        date={expense[2].date}
+      ></ExpenseItem>
+      <ExpenseItem
         title={expense[3].title}
         amount={expense[3].amount}
         date={expense[3].date}
-      ></ExpenseItem>
-      <ExpenseItem
-        title={expense[4].title}
-        amount={expense[4].amount}
-        date={expense[4].date}
       ></ExpenseItem>
     </div>
   );
