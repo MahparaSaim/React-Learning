@@ -1,5 +1,5 @@
-import "./App.css";
 import React, { useState } from "react";
+
 import Expense from "./components/Expense/Expense";
 import NewExpense from "./components/NewExpense/NewExpense";
 
@@ -27,7 +27,7 @@ function App() {
       id: "e4",
       title: "Car Insurance 4",
       amount: 295.96,
-      date: new Date(2019, 3, 5),
+      date: new Date(2020, 3, 5),
     },
   ];
   const [expense, setexpensew] = useState(DUMMY_EXPENSE);
